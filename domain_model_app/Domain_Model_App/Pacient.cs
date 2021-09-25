@@ -41,8 +41,8 @@ namespace Domain_Model_App
         public string LastName { get => _lastName; set => _lastName = value; }
         public int Age { get => _age; set => _age = value; }
         public int UserID { get => _userID; set => _userID = value; }
-        public string Bloodgroup { get => _bloodgroup; set => _bloodgroup = value; }
-        public string Rh { get => _rh; set => _rh = value; }
+        public BloodGroup? Bloodgroup { get => _bloodgroup; set => _bloodgroup = value; }
+        public Rh? Rh { get => _rh; set => _rh = value; }
         public Sex? Sex { get => sex; set => sex = value; }
     }
 }
