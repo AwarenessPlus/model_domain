@@ -16,6 +16,11 @@ namespace Domain_Model_App
         private int _pacientID;
         private Byte[] _videoRecord;
 
+        public Procedure()
+        {
+
+        }
+
         public int ProcedureID { get => _procedureID; set => _procedureID = value; }
         public string ProcedureName { get => _procedureName; set => _procedureName = value; }
         public string PatientStatus { get => _patientStatus; set => _patientStatus = value; }

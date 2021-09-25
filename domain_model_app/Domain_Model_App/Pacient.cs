@@ -34,6 +34,11 @@ namespace Domain_Model_App
         private Rh? _rh;
         private Sex? sex;
 
+        public Patient()
+        {
+
+        }
+
         public int PacientID { get => _pacientID; set => _pacientID = value; }
         public string FirstName { get => _firstName; set => _firstName = value; }
         public string SecondName { get => _secondName; set => _secondName = value; }
