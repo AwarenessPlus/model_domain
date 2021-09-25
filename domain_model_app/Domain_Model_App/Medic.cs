@@ -17,6 +17,11 @@ namespace Domain_Model_App
         private int _semester;
         private ICollection<Procedure> _procedures;
 
+        public Medic()
+        {
+
+        }
+
         public int MedicID { get => _medicID; set => _medicID = value; }
         public string FirstName { get => _firstName; set => _firstName = value; }
         public string SecondName { get => _secondName; set => _secondName = value; }
