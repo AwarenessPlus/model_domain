@@ -13,7 +13,7 @@ namespace Domain_Model_App
         private string _patientStatus;
         private int _asa;
         private int _medicID;
-        private int _pacientID;
+        private Pacient _patient;
         private Byte[] _videoRecord;
 
         public Procedure()
@@ -26,7 +26,7 @@ namespace Domain_Model_App
         public string PatientStatus { get => _patientStatus; set => _patientStatus = value; }
         public int Asa { get => _asa; set => _asa = value; }
         public int MedicID { get => _medicID; set => _medicID = value; }
-        public int PacientID { get => _pacientID; set => _pacientID = value; }
+        public Pacient Patient { get => _patient; set => _patient = value; }
         public byte[] VideoRecord { get => _videoRecord; set => _videoRecord = value; }
     }
 }
