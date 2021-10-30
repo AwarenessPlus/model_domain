@@ -28,7 +28,7 @@ namespace DomainModel
         [ForeignKey("Pacient")]
         private int _pacientID;
 
-        private Pacient _pacient;
+        private Patient _pacient;
 
         private Byte[] _videoRecord;
 
@@ -42,7 +42,7 @@ namespace DomainModel
         public string PatientStatus { get => _patientStatus; set => _patientStatus = value; }
         public int Asa { get => _asa; set => _asa = value; }
         public int MedicID { get => _medicID; set => _medicID = value; }
-        public Pacient Pacient { get => _pacient; set => _pacient = value; }
+        public Patient Pacient { get => _pacient; set => _pacient = value; }
         public byte[] VideoRecord { get => _videoRecord; set => _videoRecord = value; }
         public int PacientID { get => _pacientID; set => _pacientID = value; }
     }

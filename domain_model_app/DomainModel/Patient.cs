@@ -23,13 +23,16 @@ namespace DomainModel
         P, N, NULO
     }
 
-    public class Pacient
+    public class Patient
     {
         [Key]
         private int _pacientID;
 
         [ForeignKey("User")]
         private int _userID;
+
+        [Required]
+        private int _documentID;
 
         private User _pacientInfo;
 
@@ -39,7 +42,9 @@ namespace DomainModel
 
         private Sex? sex;
 
-        public Pacient()
+
+
+        public Patient()
         {
 
         }
@@ -50,6 +55,7 @@ namespace DomainModel
         public Rh? Rh { get => _rh; set => _rh = value; }
         public Sex? Sex { get => sex; set => sex = value; }
         public int UserID { get => _userID; set => _userID = value; }
+        public int DocumentID { get => _documentID; set => _documentID = value; }
     }
 }
 
