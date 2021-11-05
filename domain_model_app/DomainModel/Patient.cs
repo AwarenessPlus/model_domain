@@ -26,7 +26,7 @@ namespace DomainModel
     public class Patient
     {
         [Key]
-        private int _pacientID;
+        private int _patientID;
 
         [ForeignKey("User")]
         private int _userID;
@@ -34,7 +34,7 @@ namespace DomainModel
         [Required]
         private int _documentID;
 
-        private User _pacientInfo;
+        private User _patientInfo;
 
         private BloodGroup? _bloodgroup;
 
@@ -42,15 +42,13 @@ namespace DomainModel
 
         private Sex? sex;
 
-
-
         public Patient()
         {
 
         }
 
-        public int PacientID { get => _pacientID; set => _pacientID = value; }
-        public User PacientInfo { get => _pacientInfo; set => _pacientInfo = value; }
+        public int PatientID { get => _patientID; set => _patientID = value; }
+        public User PatientInfo { get => _patientInfo; set => _patientInfo = value; }
         public BloodGroup? Bloodgroup { get => _bloodgroup; set => _bloodgroup = value; }
         public Rh? Rh { get => _rh; set => _rh = value; }
         public Sex? Sex { get => sex; set => sex = value; }
