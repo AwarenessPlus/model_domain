@@ -23,7 +23,7 @@ namespace DomainModel
         private string _lastName;
 
         [Required]
-        private int _age;
+        private DateTime _birthDate;
 
         public User()
         {
@@ -35,6 +35,6 @@ namespace DomainModel
         public string SecondName { get => _secondName; set => _secondName = value; }
         public string Surname { get => _surname; set => _surname = value; }
         public string LastName { get => _lastName; set => _lastName = value; }
-        public int Age { get => _age; set => _age = value; }
+        public DateTime BirthDate { get => _birthDate; set => _birthDate = value; }
     }
 }

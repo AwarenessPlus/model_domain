@@ -22,6 +22,9 @@ namespace DomainModel
         [Required]
         private int _asa;
 
+        [Required]
+        private DateTime _procedureDate;
+
         [ForeignKey("Medic")]
         private int _medicID;
 
@@ -29,8 +32,6 @@ namespace DomainModel
         private int _pacientID;
 
         private Patient _pacient;
-
-        private Byte[] _videoRecord;
 
         public Procedure()
         {
@@ -43,7 +44,7 @@ namespace DomainModel
         public int Asa { get => _asa; set => _asa = value; }
         public int MedicID { get => _medicID; set => _medicID = value; }
         public Patient Pacient { get => _pacient; set => _pacient = value; }
-        public byte[] VideoRecord { get => _videoRecord; set => _videoRecord = value; }
         public int PacientID { get => _pacientID; set => _pacientID = value; }
+        public DateTime ProcedureDate { get => _procedureDate; set => _procedureDate = value; }
     }
 }

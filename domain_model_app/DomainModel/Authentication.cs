@@ -10,7 +10,9 @@ namespace DomainModel
         [Key]
         private int _authenticationID;
 
+        [Required]
         private String _userName;
+        [Required]
         private String _password;
 
         public Authentication()
